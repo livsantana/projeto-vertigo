@@ -14,6 +14,7 @@
     --gray400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    --white :#fff;
 }
 
 header{
@@ -67,27 +68,39 @@ main {
     font-weight: 600;
 }
 
-.input-box input{
+.login input{
     padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
     border-radius: 0.25rem;
     color: var(--gray-800);
 }
 
-.input-box input::placeholder{
+.login input::placeholder{
     color: var(--gray400);
 }
 
-.input-box input:hover,
-.input-box input:focus{
+.login input:hover,
+.login input:focus{
     outline: 1px solid var(--purple);
 }
-a{
+.login a{
     color: var(--purple);
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 600;
 }
-a:hover{
+.login a:hover{
     text-decoration: underline;
+}
+.login button{
+    margin-top: 1rem;
+    padding-block: 1rem;
+    width: 100%;
+    background: var(--purple);
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+
 }
